@@ -1,6 +1,8 @@
 # SmartBridge_AI
 Assignments
+
 Assignment 1
+Pandas Data Manipulation Basics
 
 Assignment 2
 Build an ANN model for Drug classification.
