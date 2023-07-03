@@ -13,3 +13,10 @@ Dataset Link: https://www.kaggle.com/datasets/prathamtripathi/drug-classificatio
 Task 1: Read the dataset and do data pre-processing
 Task 2: Build the ANN model with (input layer, min 3 hidden layers & output layer)
 Task 3: Test the model with random data
+
+Assignment 3:
+Build a CNN Model
+
+
+Final Project:
+SmartBridge AI Mouse
