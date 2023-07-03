@@ -28,9 +28,10 @@ Dataset Link: https://www.kaggle.com/datasets/akash2907/bird-species-classificat
 
 
 Final Project:
+
 Topic: Real-Time AI Virtual Mouse System Using Computer Vision
-SmartBridge AI Mouse
-https://github.com/srajarshi007/SmartBridge_AI/tree/main/SmartBridge%20AI%20Mouse
+SmartBridge AI Mouse: https://github.com/srajarshi007/SmartBridge_AI/tree/main/SmartBridge%20AI%20Mouse
+
 Demo Video Link: https://drive.google.com/file/d/1diM8biML9mL4I4A5on2etWH8-8AD1aoM/view?usp=drive_link
 
 
