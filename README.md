@@ -1,6 +1,6 @@
 # SmartBridge_AI
 Assignments
-Google Drive Link: https://drive.google.com/drive/u/0/folders/1Wn7f8buBXgYcRFiMpL1HXwOdZaK3YmkP
+Google Drive Link: https://drive.google.com/drive/folders/1Wn7f8buBXgYcRFiMpL1HXwOdZaK3YmkP?usp=sharing
 
 
 Assignment 1
