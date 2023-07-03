@@ -1,6 +1,8 @@
 # SmartBridge_AI
 Assignments
 Google Drive Link: https://drive.google.com/drive/u/0/folders/1Wn7f8buBXgYcRFiMpL1HXwOdZaK3YmkP
+
+
 Assignment 1
 Pandas Data Manipulation Basics
 
@@ -15,8 +17,18 @@ Task 2: Build the ANN model with (input layer, min 3 hidden layers & output laye
 Task 3: Test the model with random data
 
 Assignment 3:
-Build a CNN Model
+Build a CNN model for Bird species
+Bird species classification is the process of using machine learning and computer vision techniques to identify and categorize different species of birds based
+on their visual characteristics. By analyzing images of birds, models can extract features and patterns to accurately classify bird species. This classification is
+vital for ecological research, wildlife monitoring, and conservation efforts. Advancements in deep learning and the availability of large annotated datasets have
+improved the accuracy of bird species classification models. Challenges include variations in lighting, pose, and background clutter. Ongoing research
+focuses on methods like transfer learning and data augmentation to enhance classification performance and contribute to avian biodiversity understanding
+and conservation.
+Dataset Link: https://www.kaggle.com/datasets/akash2907/bird-species-classification
 
 
 Final Project:
+Topic: Real-Time AI Virtual Mouse System Using Computer Vision
 SmartBridge AI Mouse
+
+
