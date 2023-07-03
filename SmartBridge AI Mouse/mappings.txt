@@ -1,0 +1,9 @@
+FIST:move_mouse
+PALM:handle_drag
+INDEX:handle_left_click
+PINKY:handle_right_click
+FIRST2:handle_double_click
+PINCH_MINOR:handle_scroll
+PINCH_MAJOR:handle_system_volume
+PALM:handle_palm
+TWO_FINGER_CLOSED:
