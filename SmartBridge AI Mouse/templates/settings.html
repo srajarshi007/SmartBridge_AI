@@ -1,59 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settings</title>
-</head>
-<body>
-    <h1>Settings</h1>
-    <button onclick="window.history.back();">Back</button>
-    
-    <form action="/update_gesture_mappings" method="post">
-        <label for="action1">Move mouse:</label>
-        <select name="move_mouse" id="action1">
-            <option value="V_GEST">V_GEST - default</option>
-            <option value="FIST">FIST</option>
-            <option value="PALM">PALM</option>
-        </select>
+    <style>
+      * {
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+      }
 
-        <label for="action2">Left Click:</label>
-        <select name="handle_left_click" id="action2">
-            <option value="INDEX">INDEX - default</option>
-            <option value="THUMB">THUMB</option>
-            <option value="MID">MID</option>
-        </select>
+      body {
+        height: 100vh;
+        width: 100%;
 
-        <label for="action3">Right Click:</label>
-        <select name="handle_right_click" id="action3">
-            <option value="MID">MID - default</option>
-            <option value="RING">RING</option>
-            <option value="PINKY">PINKY</option>
-        </select>
+        background: black;
+        color: white;
 
-        <label for="action4">Drag:</label>
-        <select name="handle_drag" id="action4">
-            <option value="FIST">FIST - default</option>
-            <option value="PALM">PALM</option>
-            <option value="V_GEST">V_GEST</option>
-        </select>
+        font-family: Roboto;
 
-        <label for="action5">Double Click:</label>
-        <select name="handle_double_click" id="action5">
-            <option value="FIRST2">FIRST 2 fingers</option>
-            <option value="LAST4">LAST 4 fingers</option>
-            <option value="LAST3">LAST 3 fingers</option>
-        </select>
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        
+        text-align: center;
+      }
+      
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: all 0.2s ease;
 
-        <!-- Add more actions and gestures here -->
+        border-bottom: 1px solid transparent;
+      }
 
-        <input type="submit" value="Save">
-    </form>
+      a:hover{   
+        border-color: white;
+      }
 
-    <br>
-    <a href="/">Back to Homepage</a>
-</body>
+      h1{
+        font-size: 32px;
+      }
+
+      body > div{
+        min-width: 30%;
+      }
+
+      form{
+        text-align:left;
+      }
+
+      table{
+        width: 100%;
+        padding: 2rem 10rem;
+      }
+
+      tr{
+        gap: 2rem;
+      }
+
+      td{
+        font-size: 18px;
+        margin-top: 2rem;
+        text-align: right;
+      }
+
+      td:nth-child(2){
+        padding: 0 2rem;
+        text-align: left;
+      }
+
+
+      td > select, td > input{
+        pointer: cursor; 
+        background: transparent;
+        color: white;
+        border: 1px solid white;
+        padding: 0.7rem 1rem;
+
+        width: 9.5rem;
+      }
+      
+      .btn {
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        border: 0.5px solid white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0.4rem;
+
+        transition: all 0.2s ease;
+
+        cursor: pointer;
+      }
+      
+      .btn:hover {
+        background: white;
+        color: black;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div>
+      <h1>Settings</h1>
+
+      <form action="/update_gesture_mappings" method="post">
+        <table>
+          <tr>
+            <td>
+              <label for="action1">Move mouse</label>
+            </td>
+            <td>
+              <select name="move_mouse" id="action1">
+                <option value="V_GEST">V_GEST</option>
+                <option value="FIST">FIST</option>
+                <option value="PALM">PALM</option>
+              </select>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <label for="action2">Left Click</label>
+            </td>
+            <td>
+              <select name="handle_left_click" id="action2">
+                <option value="INDEX">INDEX</option>
+                <option value="THUMB">THUMB</option>
+                <option value="MID">MID</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="action3">Right Click</label>
+            </td>
+            <td>
+              <select name="handle_right_click" id="action3">
+                <option value="MID">MID</option>
+                <option value="RING">RING</option>
+                <option value="PINKY">PINKY</option>
+              </select>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <label for="action4">Drag</label>
+            </td>
+            <td>
+              <select name="handle_drag" id="action4">
+                <option value="FIST">FIST</option>
+                <option value="PALM">PALM</option>
+                <option value="V_GEST">V_GEST</option>
+              </select>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <label for="action5">Double Click</label>
+            </td>
+            <td>
+              <select name="handle_double_click" id="action5">
+                <option value="FIRST2">FIRST 2 fingers</option>
+                <option value="LAST4">LAST 4 fingers</option>
+                <option value="LAST3">LAST 3 fingers</option>
+              </select>
+            </td>
+            <!-- Add more actions and gestures here -->
+          </tr>
+          
+          <tr>
+            <td colspan="2" style = "text-align: center; transition:all 0.2ms ease">
+              <div class="btn">Save</div>
+              <!-- <input type="submit" value="Save" /> -->
+            </td>
+          </tr>
+          
+        </table>
+      </form>
+
+      <br />
+      <a href="/">Back to Homepage</a>
+    </div>
+  </body>
 </html>
-

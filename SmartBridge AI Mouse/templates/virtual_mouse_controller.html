@@ -1,31 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gesture Control</title>
-</head>
-<body>
-    <button onclick="window.history.back();">Back</button>
-    <h1>Gesture Control</h1>
-    <img src="{{ url_for('video_feed') }}" alt="Live Video Stream">
-    <button id="start">Start</button>
-    <button id="stop">Stop</button>
+    <style>
+      * {
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+      }
 
+      body {
+        height: 100vh;
+        width: 100%;
+
+        background: black;
+        color: white;
+
+        font-family: Roboto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      img {
+        font-size: 18px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: all 0.2s ease;
+      }
+
+      .btn {
+        height: 2.7rem;
+        width: 100%;
+        border: 0.5px solid white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background: white;
+        color: black;
+      }
+      
+      .btns{
+        margin: 1rem 0rem;
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+        padding: 0.7rem 1rem;
+      }
+
+      button{
+        height: 2.7rem;
+        width: 40%;
+        border: 0.5px solid transparent;
+        margin: 0 auto;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: all 0.2s ease;
+        cursor: pointer;
+
+        background: transparent;
+        color: white;
+        font-size: 16px;
+      }
+
+      button:hover{
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Gesture Control</h1>
+      <img src="{{ url_for('video_feed') }}" alt="Live Video Stream" />
+      <div class="btns">
+        <div class="btn" id="start">Start</div>
+        <div class="btn" id="stop">Stop</div>
+      </div>
+      <button onclick="window.history.back();">Back</button>
+    </div>
     <script>
-        const startButton = document.getElementById("start");
-        const stopButton = document.getElementById("stop");
+      const startButton = document.getElementById("start");
+      const stopButton = document.getElementById("stop");
 
-        startButton.addEventListener("click", () => {
-            // Send a request to the server to start gesture detection
-            fetch("/start_gesture_detection");
-        });
+      startButton.addEventListener("click", () => {
+        // Send a request to the server to start gesture detection
+        fetch("/start_gesture_detection");
+      });
 
-        stopButton.addEventListener("click", () => {
-            // Send a request to the server to stop gesture detection
-            fetch("/stop_gesture_detection");
-        });
+      stopButton.addEventListener("click", () => {
+        // Send a request to the server to stop gesture detection
+        fetch("/stop_gesture_detection");
+      });
     </script>
-</body>
+  </body>
 </html>
