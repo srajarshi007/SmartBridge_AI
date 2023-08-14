@@ -1,19 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gesture Control Homepage</title>
-</head>
-<body>
-    <h1>Welcome to Gesture Control</h1>
-    <p>Here are the default gestures:</p>
-    <!-- Add your default gestures here -->
+    <style>
+      * {
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        height: 100vh;
+        width: 100%;
 
-    <h2>Navigate to:</h2>
-    <ul>
-        <li><a href="/settings">Settings</a></li>
-        <li><a href="/virtual_mouse_controller">Virtual Mouse Controller</a></li>
-    </ul>
-</body>
+        background: black;
+        color: white;
+
+        font-family: Roboto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+      }
+      
+      h1 {
+        font-size: 40px;
+        margin-bottom: 2rem;
+      }
+      
+      p {
+        font-size: 18px;
+      }
+      
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: all 0.2s ease;
+      }
+      
+      .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin: 0 auto;
+        width: 65%;
+      }
+      
+      .btn {
+        height: 4rem;
+        border: 0.5px solid white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 1rem;
+
+        transition: all 0.2s ease;
+
+        cursor: pointer;
+      }
+      
+      .btn:hover {
+        background: white;
+        color: black;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to Gesture Control</h1>
+      <!-- <p>Here are the default gestures:</p> -->
+
+      <div class="navigation">
+        <a href="/settings">
+          <div class="btn">Settings</div>
+        </a>
+        <a href="/virtual_mouse_controller">
+          <div class="btn">Virtual Mouse Controller</div>
+        </a>
+      </div>
+    </div>
+  </body>
 </html>
